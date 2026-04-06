@@ -1,2 +1,55 @@
-p{  color: red;
+
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+p, li, td {
+    color: black;
+}
+
+
+h2, h3, h4 {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%; 
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    background-color: lavenderblush;
+    border-radius: 10px;
+    overflow: hidden; 
+    margin-top: 10px;
+}
+
+
+th {
+    background-color: lightblue;
+    color: black;
+}
+
+
+table, th, td {
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+
+ul, ol {
+    margin-left: 20px;
 }
