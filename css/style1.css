@@ -1,0 +1,54 @@
+
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+p, li, td {
+    color: black;
+}
+
+
+h2, h3, h4 {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%; 
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+table {
+    border-spacing:0;
+    background-color: lavenderblush;
+    margin-top: 20px;
+	width:70%;
+}
+
+
+th {
+    background-color: lightblue;
+    color: black;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+
+ul, ol {
+    margin-left: 20px;
+}
