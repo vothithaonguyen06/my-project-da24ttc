@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Album Arirang BTS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style7.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="product-list" id="product-list"></div>
+</div>
+
+<script>
+const productItem = document.createElement("div");
+productItem.setAttribute("class", "product-item");
+
+// ===== IMAGE =====
+const productImage = document.createElement("div");
+productImage.setAttribute("class", "product-image");
+
+const myImage = document.createElement("img");
+myImage.setAttribute("src", "../assets/images/AVATAR.png");
+myImage.setAttribute("alt", "Album Arirang BTS");
+
+productImage.appendChild(myImage);
+
+// ===== INFO =====
+const productInfo = document.createElement("div");
+productInfo.setAttribute("class", "product-info");
+
+// tên
+const productName = document.createElement("p");
+const productNameText = document.createTextNode("Album Arirang BTS");
+productName.appendChild(productNameText);
+productInfo.appendChild(productName);
+
+// giá
+const productPrice = document.createElement("p");
+const productPriceText = document.createTextNode("876.000 VNĐ/cuốn");
+productPrice.appendChild(productPriceText);
+productInfo.appendChild(productPrice);
+
+// ===== LINK (mới thêm) =====
+const productLink = document.createElement("a");
+productLink.setAttribute("href", "product-detail.html"); // cùng thư mục
+productLink.textContent = "Xem chi tiết";
+
+// nếu muốn mở tab mới thì bật dòng này
+// productLink.setAttribute("target", "_blank");
+
+productInfo.appendChild(productLink);
+
+// ===== GHÉP =====
+productItem.appendChild(productImage);
+productItem.appendChild(productInfo);
+
+// ===== HIỂN THỊ =====
+document.getElementById("product-list").appendChild(productItem);
+
+</script>
+
+</body>
+</html>
