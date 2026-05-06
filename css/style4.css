@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeff2;
+}
+
+.container {
+    width: 800px;        /* làm khung to ra */
+    margin: 50px auto;   /* căn giữa */
+}
+
+table {
+    width: 100%;         /* bảng full container */
+    border-collapse: collapse; /* bỏ khoảng hở viền */
+    background-color: rgb(240, 244, 213);
+    font-size: 18px;     /* chữ to hơn */
+}
+
+caption {
+    font-size: 26px;
+    font-weight:bold;
+    margin-bottom: 15px; /* cách bảng */
+    color: red;
+}
+
+th, td {
+    border: 1px solid #101010;
+    padding: 12px 15px;  /* TĂNG khoảng cách trong ô */
+    text-align: center;
+}
+
+th {
+    background-color: #77b0e8;
+}
+
+td:first-child {
+    text-align: center; /* tên sản phẩm lệch trái cho đẹp */
+}
+
+tr:last-child td {
+    font-weight: bold;
+    background-color: #f5daea;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Đăng ký hội viên</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+
+<body>
+<div class="container">
+<form id="frmRegister">
+    <h3 class="title">Đăng ký hội viên CLB</h3>
+
+    <!-- Thông tin cá nhân -->
+    <div class="form-group">
+        <label class="label">Họ và tên:</label>
+        <input class="form-control" type="text" name="fullname" required>
+    </div>
+     <div class="form-group">
+    <label class="label">Mã số sinh viên:</label>
+    <input class="form-control" type="text" name="studentID" required>
+</div>
+    <div class="form-group">
+        <label class="label">Mã lớp:</label>
+        <select class="form-control" name="class">
+            <option>DA22TTA</option>
+            <option>DA22TTB</option>
+            <option>DA22TTC</option>
+            <option>DA22TTD</option>
+            <option>DA23TTA</option>
+            <option>DA23TTB</option>
+            <option>DA23TTC</option>
+            <option>DA23TTD</option>
+            <option>DA24TTA</option>
+            <option>DA24TTB</option>
+            <option>DA24TTC</option>
+            <option>DA24TTD</option>
+            <option>DA25TTA</option>
+            <option>DA25TTB</option>
+            <option>DA25TTC</option>
+            <option>DA25TTD</option>
+
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="label">Ngày sinh:</label>
+        <input class="form-control" type="date" name="birthday">
+    </div>
+
+    <div class="form-group">
+        <label class="label">Giới tính:</label>
+        <input type="radio" name="gender" value="Nam"> Nam
+        <input type="radio" name="gender" value="Nữ"> Nữ
+        <input type="radio" name="gender" value="Khác"> Khác
+    </div>
+
+    <!-- Liên hệ -->
+    <div class="form-group">
+        <label class="label">Email:</label>
+        <input class="form-control" type="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label class="label">Số điện thoại:</label>
+        <input class="form-control" type="tel" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label class="label">Nơi ở:</label>
+        <input class="form-control" type="text" name="address">
+    </div>
+
+    <!-- Sở thích -->
+    <div class="form-group">
+        <label class="label">Sở thích:</label>
+        <input type="checkbox" name="hobby" value="Thể thao"> Thể thao
+        <input type="checkbox" name="hobby" value="Âm nhạc"> Âm nhạc
+        <input type="checkbox" name="hobby" value="Code"> Viết Code
+         <input type="checkbox" name="hobby" value="Du lịch"> Du lịch
+          <input type="checkbox" name="hobby" value="Du lịch"> Đọc sách
+        <input type="checkbox" name="hobby" value="Du lịch"> Vẽ tranh
+        <input type="checkbox" name="hobby" value="Du lịch"> khác
+    </div>
+
+    <!-- Điểm mạnh -->
+    <div class="form-group">
+        <label class="label">Điểm mạnh:</label>
+        <textarea class="form-control" name="strength" rows="3"></textarea>
+    </div>
+
+    <!-- Thời gian tham gia -->
+    <div class="form-group">
+        <label class="label">Thời gian có thể tham gia CLB:</label>
+        <select class="form-control" name="time">
+            <option>Buổi sáng</option>
+            <option>Buổi chiều</option>
+            <option>Buổi tối</option>
+            <option>Cuối tuần</option>
+            <option>Khác</option>
+            
+        </select>
+    </div>
+  <!-- Nút -->
+    <div class="form-group button-group">
+        <input class="button" type="submit" value="Đăng ký">
+        <input class="button" type="reset" value="Hủy">
+    </div>
+
+</form>
+</div>
+</body>
+</html>
+   

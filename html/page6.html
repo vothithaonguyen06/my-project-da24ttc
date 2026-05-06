@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính học phí</title>
+    <link rel="stylesheet" href="../css/style6.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Tính học phí</h2>
+
+    <div class="actions">
+        <button onclick="addRow()">Thêm môn học</button>
+        <button onclick="tinhHocPhi()">Tính học phí</button>
+    </div>
+
+    <div id="list"></div>
+
+    <h3 id="result">Tổng tiền: 0</h3>
+</div>
+
+<script>
+function addRow() {
+    const row = document.createElement("div");
+    row.setAttribute("class", "row");
+
+    const uniqueName = "he_" + Date.now();
+
+    row.innerHTML = `
+        <input type="number" placeholder="Số tín chỉ" class="tinchi">
+
+        <label>
+            <input type="radio" name="${uniqueName}" value="300000" checked>
+            Chính quy
+        </label>
+
+        <label>
+            <input type="radio" name="${uniqueName}" value="400000">
+            Chuyển ngành
+        </label>
+
+        <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+    `;
+
+    document.getElementById("list").appendChild(row);
+}
+
+function removeRow(btn) {
+    btn.parentElement.remove();
+}
+
+function tinhHocPhi() {
+    const rows = document.querySelectorAll(".row");
+    let total = 0;
+
+    rows.forEach(row => {
+        const tinchi = row.querySelector(".tinchi").value;
+        const he = row.querySelector("input[type=radio]:checked").value;
+
+        if (tinchi) {
+            total += tinchi * he;
+        }
+    });
+
+    document.getElementById("result").innerText =
+        "Tổng tiền: " + total.toLocaleString() + " VND";
+}
+</script>
+
+</body>
+</html>
