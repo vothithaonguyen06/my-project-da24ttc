@@ -66,7 +66,7 @@ const products = [
         id: "08",
         name: "Arirang ver J-Hope",
         price: 794000,
-        desc: "Phiên bản j-hope mang màu sắc tươi sáng, năng động và trẻ trung. Album đi kèm photobook concept riêng, photocard ngẫu nhiên, postcard độc quyền và mini poster phiên bản giới hạn.",
+        desc: "Phiên bản j-Hope mang màu sắc tươi sáng, năng động và trẻ trung. Album đi kèm photobook concept riêng, photocard ngẫu nhiên, postcard độc quyền và mini poster phiên bản giới hạn.",
         image: "../assets/images/verjhope.jpg",
         productLink: "product-detail.html"
     }
